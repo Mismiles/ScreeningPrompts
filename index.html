@@ -65,8 +65,7 @@
                 box.classList.add("box");
                 box.textContent = text;
                 box.onclick = () => {
-                    navigator.clipboard.writeText(text);
-                    alert("Copied: " + text);
+                    navigator.clipboard.writeText(text); // Silent copy
                 };
                 container.appendChild(box);
             });
